@@ -1,0 +1,20 @@
+<div class="col-xs-12" style="height: 50px;"></div>
+<div class="mx-auto" style="width: 1000px;">
+    <div>
+        <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/pessoas/form']">Novo</button>
+    </div>
+
+    <div class="row">
+        <div class="mx auto col-sm-4" *ngFor="let grupo of grupos | async">
+            <div class="card" style="width: 18rem ;">
+                <img src="https://picsum.photos/200/50" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nome: {{ grupo.nome }}</h5>
+                    <p class="card-text">testetetstetstetestetsetstetestetstetsetste</p>
+                    <a href="#" class="mr-1 btn btn-primary">Visualizar</a>
+                    <a href="#" class="mr-1 btn btn-danger">Apagar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
