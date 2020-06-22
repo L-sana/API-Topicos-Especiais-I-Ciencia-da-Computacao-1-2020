@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eaE5hkmpWB+qVmF7OWQkmvFGM6ZpSSz8Ji1iQR1TMRNJXhhjXBosJzxDumfK4p3VQVZmqUHSVhY156IVoutrWw==",
+  "dgSpecHash": "bdG5JHP6KWMd8UMtkZSjIx7ibve98dVepnckINLQmwxHEPVeYACWqGhsfLRLIzsVIsPuHCDG+NUspLVXZX3tZg==",
   "success": true,
-  "projectFilePath": "L:\\xampp\\htdocs\\Project\\Projeto\\Projeto.csproj",
+  "projectFilePath": "L:\\xampp\\htdocs\\API-Topicos-Especiais-I-Ciencia-da-Computacao-1-2020\\BackEnd-API\\Projeto\\Projeto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lsana\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Lsana\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

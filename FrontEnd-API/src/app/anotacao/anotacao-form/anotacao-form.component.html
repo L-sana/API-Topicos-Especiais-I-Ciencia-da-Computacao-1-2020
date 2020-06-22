@@ -1,0 +1,19 @@
+<div class="col-xs-12" style="height:50px;"></div>
+<div class=mx-auto style="width:400px;">
+    <form #f="ngForm" (ngSubmit)="salvar(anotacao)">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="id">ID</label>
+                <input type="email" class="form-control" id="Id" placeholder="id" name="id" [(ngModel)]="anotacao.id">
+                <br>
+                <label for="Data">Data</label>
+                <input type="date" class="form-control" id="Data" placeholder="data" name="nome" [(ngModel)]="anotacao.data">
+                <br>
+                <label for="Obs">Observação</label>
+                <input type="text" class="form-control" id="Obs" placeholder="observação" name="obs" [(ngModel)]="anotacao.obs">
+                <br>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+</div>

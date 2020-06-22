@@ -1,0 +1,15 @@
+<div class="col-xs-12" style="height:50px;"></div>
+<div class=mx-auto style="width:400px;">
+    <form #f="ngForm" (ngSubmit)="salvar(perfil)">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="id">ID</label>
+                <input type="email" class="form-control" id="Id" placeholder="id" name="id" [(ngModel)]="perfil.id">
+                <br>
+                <label for="Nome">Nome</label>
+                <input type="email" class="form-control" id="Nome" placeholder="nome" name="nome" [(ngModel)]="perfil.descricao">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+</div>

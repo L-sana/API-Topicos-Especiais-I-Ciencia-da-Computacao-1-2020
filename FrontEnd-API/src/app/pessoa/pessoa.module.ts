@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { PessoaRoutingModule } from './pessoa-routing.module';
 import { PessoaListaComponent } from './pessoa-lista/pessoa-lista.component';
-
+import { PessoaFormularioComponent } from './pessoa-formulario/pessoa-formulario.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [PessoaListaComponent],
+  declarations: [PessoaListaComponent, PessoaFormularioComponent],
   imports: [
     CommonModule,
+    FormsModule,
     PessoaRoutingModule
   ]
 })

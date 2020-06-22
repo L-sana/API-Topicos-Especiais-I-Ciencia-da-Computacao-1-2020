@@ -20,4 +20,9 @@ export class PessoaListaComponent implements OnInit {
     this.pessoas = this.service.getPessoa();
   }
 
+  apagar(id: number)
+  {
+    this.service.deletePessoa(id).subscribe();
+  }
+
 }

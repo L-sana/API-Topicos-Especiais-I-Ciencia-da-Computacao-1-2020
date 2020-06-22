@@ -1,9 +1,9 @@
 <div class="col-xs-12" style="height: 50px;"></div>
 <div class="mx-auto" style="width: 1000px;">
     <div>
-        <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/pessoas/form']">Novo</button>
+        <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/anotacao/form']">Novo</button>
     </div>
-
+    <br>
     <div class="row">
         <div class="mx auto col-sm-4" *ngFor="let anotacao of anotacoes | async">
             <div class="card" style="width: 18rem ;">
@@ -12,7 +12,7 @@
                     <h5 class="card-title">Anotação: {{ anotacao.obs }}</h5>
                     <!-- <p class="card-text">testetetstetstetestetsetstetestetstetsetste</p> -->
                     <a href="#" class="mr-1 btn btn-primary">Visualizar</a>
-                    <a href="#" class="mr-1 btn btn-danger">Apagar</a>
+                    <a href="/anotacao" class="mr-1 btn btn-danger" (click)="apagar(anotacao.id)">Apagar</a>
                 </div>
             </div>
         </div>

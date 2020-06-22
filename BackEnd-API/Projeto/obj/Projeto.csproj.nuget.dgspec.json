@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "L:\\xampp\\htdocs\\Project\\Projeto\\Projeto.csproj": {}
+    "L:\\xampp\\htdocs\\API-Topicos-Especiais-I-Ciencia-da-Computacao-1-2020\\BackEnd-API\\Projeto\\Projeto.csproj": {}
   },
   "projects": {
-    "L:\\xampp\\htdocs\\Project\\Projeto\\Projeto.csproj": {
+    "L:\\xampp\\htdocs\\API-Topicos-Especiais-I-Ciencia-da-Computacao-1-2020\\BackEnd-API\\Projeto\\Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\xampp\\htdocs\\Project\\Projeto\\Projeto.csproj",
+        "projectUniqueName": "L:\\xampp\\htdocs\\API-Topicos-Especiais-I-Ciencia-da-Computacao-1-2020\\BackEnd-API\\Projeto\\Projeto.csproj",
         "projectName": "Projeto",
-        "projectPath": "L:\\xampp\\htdocs\\Project\\Projeto\\Projeto.csproj",
+        "projectPath": "L:\\xampp\\htdocs\\API-Topicos-Especiais-I-Ciencia-da-Computacao-1-2020\\BackEnd-API\\Projeto\\Projeto.csproj",
         "packagesPath": "C:\\Users\\Lsana\\.nuget\\packages\\",
-        "outputPath": "L:\\xampp\\htdocs\\Project\\Projeto\\obj\\",
+        "outputPath": "L:\\xampp\\htdocs\\API-Topicos-Especiais-I-Ciencia-da-Computacao-1-2020\\BackEnd-API\\Projeto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lsana\\AppData\\Roaming\\NuGet\\NuGet.Config",

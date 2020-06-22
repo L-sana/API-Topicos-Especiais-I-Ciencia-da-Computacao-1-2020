@@ -19,4 +19,9 @@ export class RecursoListaComponent implements OnInit {
     this.recursos = this.service.getRecurso();
   }
 
+  apagar(id: number)
+  {
+    this.service.deleteRecurso(id).subscribe();
+  }
+
 }

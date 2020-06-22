@@ -19,4 +19,9 @@ export class GrupoListaComponent implements OnInit {
     this.grupos = this.service.getGrupo();
   }
 
+  apagar(id: number)
+  {
+    this.service.deleteGrupo(id).subscribe();
+  }
+
 }

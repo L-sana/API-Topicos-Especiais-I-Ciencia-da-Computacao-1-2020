@@ -18,5 +18,9 @@ export class AnotacaoListaComponent implements OnInit {
   ngOnInit(): void {
     this.anotacoes = this.service.getAnotacao();
   }
+  apagar(id: number)
+  {
+    this.service.deleteAnotacao(id).subscribe();
+  }
 
 }

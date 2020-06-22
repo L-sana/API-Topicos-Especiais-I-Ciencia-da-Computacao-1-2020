@@ -3,16 +3,16 @@
     <div>
         <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/pessoas/form']">Novo</button>
     </div>
-
+    <br>
     <div class="row">
         <div class="mx auto col-sm-4" *ngFor="let pessoa of pessoas | async">
             <div class="card" style="width: 18rem ;">
                 <img src="https://picsum.photos/200/50" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nome: {{ pessoa.nome }}</h5>
-                    <p class="card-text">testetetstetstetestetsetstetestetstetsetste</p>
+                    <!-- <p class="card-text">testetetstetstetestetsetstetestetstetsetste</p> -->
                     <a href="#" class="mr-1 btn btn-primary">Visualizar</a>
-                    <a href="#" class="mr-1 btn btn-danger">Apagar</a>
+                    <a href="/pessoas" class="mr-1 btn btn-danger" (click)="apagar(pessoa.id)">Apagar</a>
                 </div>
             </div>
         </div>

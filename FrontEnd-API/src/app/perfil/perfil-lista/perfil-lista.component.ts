@@ -9,6 +9,7 @@ import { PerfilService } from '../perfil.service'
   templateUrl: './perfil-lista.component.html',
   styleUrls: ['./perfil-lista.component.css']
 })
+
 export class PerfilListaComponent implements OnInit {
 
   perfis : Observable<Perfil>;
@@ -17,6 +18,11 @@ export class PerfilListaComponent implements OnInit {
 
   ngOnInit(): void {
     this.perfis = this.service.getPerfil();
+  }
+
+  apagar(id: number)
+  {
+    this.service.deletePerfil(id).subscribe();
   }
 
 }
