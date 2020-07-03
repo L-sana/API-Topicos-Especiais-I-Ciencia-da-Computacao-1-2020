@@ -16,5 +16,10 @@ namespace Projeto.VO
         public int id_grupo { set; get; }
 
         public int id_pessoa { set; get; }
+
+        public GrupoVO Grupo { get; set; }
+
+        public PessoaVO Pessoa { get; set; }
+
     }
 }

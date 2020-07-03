@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Projeto.Model;
 using Projeto.VO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -135,7 +136,8 @@ namespace Projeto.DAO
                 int currentPage = pageNumber == 0 ? pageNumber = 1 : pageNumber;
 
                 IQueryable<Entity> dbQuery = context.Set<Entity>();
-                dbQuery = GetCustomWhere(dbQuery, filter);
+                dbQuery = GetCustomWhere(dbQuery, filter)
+                .LoadRelated();
 
                 int totalItems = dbQuery.Count();
                 int itemPerPage = numberOfElements == 0 ? totalItems : numberOfElements;

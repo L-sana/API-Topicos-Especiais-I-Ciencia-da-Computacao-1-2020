@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations.Schema;
+using Projeto.DAO;
 
 namespace Projeto.Model
 {
@@ -14,6 +15,11 @@ namespace Projeto.Model
 
         [Column(name: "Id_pessoa_grupo")]
         public int Id_pessoa_grupo { set; get; }
+
+        [ForeignKey("Id_pessoa_grupo")]
+        [IncludeAttribute]
+        public PessoaGrupo PessoaGrupo { set; get; }
+
 
     }
 }

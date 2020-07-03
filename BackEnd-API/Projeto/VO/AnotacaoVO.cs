@@ -11,8 +11,11 @@ namespace Projeto.VO
 
         public System.DateTime data { set; get; }
 
-        public int id_grupo { set; get; }
+        public int id_pessoa_grupo { set; get; }
+        // public int id_grupo { set; get; }
 
-        public int id_pessoa { set; get; }
+        // public int id_pessoa { set; get; }
+
+        public PessoaGrupoVO PessoaGrupo { get; set; }
     }
 }

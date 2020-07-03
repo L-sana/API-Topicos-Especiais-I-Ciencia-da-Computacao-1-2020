@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations.Schema;
+using Projeto.DAO;
 
 
 namespace Projeto.Model
@@ -22,6 +23,13 @@ namespace Projeto.Model
         [Column(name: "Semestre")]
         public int Semestre { set; get; }
 
+        [ForeignKey("Id_grupo")]
+        [IncludeAttribute]
+        public Grupo Grupo { set; get; }
+
+        [ForeignKey("Id_pessoa")]
+        [IncludeAttribute]
+        public Pessoa Pessoa { set; get; }
 
     }
 }

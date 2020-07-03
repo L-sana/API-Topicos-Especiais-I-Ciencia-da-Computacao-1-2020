@@ -10,5 +10,10 @@ namespace Projeto.VO
         public int id_perfil { set; get; }
 
         public int id_recurso { set; get; }
+
+        public PerfilVO Perfil { get; set; }
+
+        public RecursoVO Recurso { get; set; }
+
     }
 }

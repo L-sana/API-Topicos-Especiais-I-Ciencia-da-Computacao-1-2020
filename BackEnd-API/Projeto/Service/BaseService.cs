@@ -52,9 +52,9 @@ namespace Projeto.Service
             {
                 return dao.Select(pageNumber, pageSize, filter);
             }
-            catch
+            catch(Exception ex)
             {
-                throw new System.ArgumentException("Estudar...", "estudar...");
+                throw new Exception(ex.Message);
             }
         }
 

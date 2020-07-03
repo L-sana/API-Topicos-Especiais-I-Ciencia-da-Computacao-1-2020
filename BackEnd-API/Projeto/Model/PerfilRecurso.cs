@@ -1,6 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations.Schema;
-
+using Projeto.DAO;
 
 namespace Projeto.Model
 {
@@ -12,5 +12,14 @@ namespace Projeto.Model
 
         [Column(name: "Id_recurso")]
         public int Id_recurso { set; get; }
+
+        [ForeignKey("Id_perfil")]
+        [IncludeAttribute]
+        public Perfil Perfil { set; get; }
+
+        [ForeignKey("Id_recurso")]
+        [IncludeAttribute]
+        public Recurso Recurso { set; get; }
+
     }
 }
